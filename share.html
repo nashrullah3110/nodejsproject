@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>ShareHub</title>
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: Arthur;
+		--web-view-id: Arthur;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Arthur;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	#Arthur {
+		position: absolute;
+		box-sizing: border-box;
+		background: #E5E5E5;
+		width: 1365px;
+		height: 625px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		--web-view-name: Arthur;
+		--web-view-id: Arthur;
+		--web-enable-deep-linking: true;
+	}
+	.comfort_comfortable_contempora {
+		position: absolute;
+		overflow: visible;
+		width: 1361px;
+		height: 908px;
+		left: 0px;
+		top: -50px;
+	}
+	#Rectangle_1 {
+		opacity: 0.81;
+	}
+	.Rectangle_1 {
+		position: absolute;
+		overflow: visible;
+		width: 1365px;
+		height: 768px;
+		left: 0px;
+		top: 0px;
+	}
+	#ARTHUR {
+		position: absolute;
+		left: 534px;
+		top: 207px;
+		overflow: visible;
+		width: 298px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 80px;
+		color: rgba(255,255,255,1);
+	}
+	#ARTHUR_A0_Text_2 {
+		position: absolute;
+		left: 58px;
+		top: 29px;
+		overflow: visible;
+		width: 75px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#HOME {
+		position: absolute;
+		left: 496px;
+		top: 29px;
+		overflow: visible;
+		width: 58px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#HOME:hover
+	{
+		font-size: 25px;
+		animation-duration: 0.3s;
+	}
+	#LOG_IN___SIGN_IN {
+		position: absolute;
+		left: 625px;
+		top: 29px;
+		overflow: visible;
+		width: 153px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#LOG_IN___SIGN_IN:hover
+	{
+		font-size: 25px;
+		animation-duration: 0.3s;
+	}
+	#ABOUT_US {
+		position: absolute;
+		left: 849px;
+		top: 29px;
+		overflow: visible;
+		width: 95px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#ABOUT_US:hover
+	{
+		font-size: 25px;
+		animation-duration: 0.3s;
+	}
+	#_COM {
+		position: absolute;
+		left: 890px;
+		top: 260px;
+		overflow: visible;
+		width: 75px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+	}
+	#It_s_a_platform_to_ask_questio {
+		position: absolute;
+		left: 430px;
+		top: 330px;
+		overflow: visible;
+		width: 613px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 1px;
+	}
+	.youtube__1_ {
+		position: absolute;
+		overflow: visible;
+		width: 15px;
+		height: 15px;
+		left: 1179px;
+		top: 35px;
+	}
+	.twitter__1_ {
+		position: absolute;
+		overflow: visible;
+		width: 15px;
+		height: 15px;
+		left: 1238px;
+		top: 35px;
+	}
+	.instagram__1_ {
+		position: absolute;
+		overflow: visible;
+		width: 15px;
+		height: 15px;
+		left: 1120px;
+		top: 35px;
+	}
+	#Component_3___1 {
+		cursor: pointer;
+		position: absolute;
+		width: 163px;
+		height: 40px;
+		left: 650px;
+		top: 435px;
+		overflow: visible;
+	}
+
+	.Rectangle_4 {
+		position: absolute;
+		overflow: visible;
+		width: 163px;
+		height: 40px;
+		left: 0px;
+		top: 0px;
+	}
+	.Rectangle_4
+	{
+		background-color: white;
+	}
+	#GET_STARTED {
+		position: absolute;
+		left: 5px;
+		top: 5px;
+		overflow: visible;
+		width: 129px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.5px;
+	}
+	.Rectangle_5 {
+		position: absolute;
+		overflow: visible;
+		width: 163px;
+		height: 40px;
+		left: 0px;
+		top: 0px;
+	}
+	.Rectangle_5:hover
+	{
+		background-color: white;
+	}
+	#ASK_QUESTION {
+		position: absolute;
+		left: 8px;
+		top: 7px;
+		overflow: visible;
+		width: 148px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.5px;
+	}
+	#All_Rights_Reserved_Copyright_ {
+		position: absolute;
+		left: 598px;
+		top: 581px;
+		overflow: visible;
+		width: 207px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.5px;
+	}
+	#Privacy_Policy {
+		position: absolute;
+		left: 58px;
+		top: 581px;
+		overflow: visible;
+		width: 80px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.5px;
+	}
+	#Help {
+		position: absolute;
+		left: 1226px;
+		top: 581px;
+		overflow: visible;
+		width: 28px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.5px;
+	}
+	a
+	{
+		text-decoration: none;
+		color: white;
+    }
+    body{
+  margin: 0;
+  padding: 0;
+  background: url(/comfort_comfortable_contempora_A0_Rectangle_2_pattern);
+  background-size: cover;
+}
+.contact-form{
+  width: 85%;
+  max-width: 600px;
+  background: #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 30px 40px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 20px #000000b3;
+  font-family: "Montserrat",sans-serif;
+}
+.contact-form h1{
+  margin-top: 0;
+  font-weight: 200;
+}
+.txtb{
+  border:1px solid gray;
+  margin: 8px 0;
+  padding: 12px 18px;
+  border-radius: 8px;
+}
+.txtb label{
+  display: block;
+  text-align: left;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.txtb input,.txtb textarea{
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 18px;
+  margin-top: 6px;
+}
+.btn{
+  display: inline-block;
+  background: #9b59b6;
+  padding: 14px 0;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 8px;
+  width: 100%;
+}
+.submit
+{
+    background-color:seagreen;
+    border-style: none;
+    height: 40px;
+    width: 100px;
+}
+</style>
+</head>
+<body>
+<div id="Arthur">
+	<svg class="comfort_comfortable_contempora">
+		<pattern elementId="comfort_comfortable_contempora_A0_Rectangle_2" id="comfort_comfortable_contempora_A0_Rectangle_2_pattern" x="0" y="0" width="100%" height="100%">
+			<image x="0" y="0" width="100%" height="100%" href="/comfort_comfortable_contempora_A0_Rectangle_2_pattern" xlink:href="comfort_comfortable_contempora_A0_Rectangle_2_pattern.png"></image>
+		</pattern>
+		<rect fill="url(#comfort_comfortable_contempora_A0_Rectangle_2_pattern)" id="comfort_comfortable_contempora" rx="0" ry="0" x="0" y="0" width="1361" height="768">
+		</rect>
+	</svg>
+	<svg class="Rectangle_1">
+		<linearGradient id="LinearGradientFill1" spreadMethod="pad" x1="0.134" x2="0.835" y1="0.484" y2="0.581">
+			<stop offset="0" stop-color="#902ee5" stop-opacity="1"></stop>
+			<stop offset="1" stop-color="#4c7cff" stop-opacity="1"></stop>
+		</linearGradient>
+		<rect fill="url(#LinearGradientFill1)" id="Rectangle_1" rx="0" ry="0" x="0" y="0" width="1365" height="1000">
+		</rect>
+	</svg>
+	<div id="ARTHUR">
+		
+	</div>
+	<div id="ARTHUR_A0_Text_2">
+		<a href="/home"><span>ShareHub</span></a>
+	</div>
+	<div id="HOME">
+		<a href="/home"><span>HOME</span></a>
+	</div>
+	<div id="LOG_IN___SIGN_IN">
+            <a href="/logout"><p>Logout</p></a>
+	</div>
+	<div id="ABOUT_US">
+		<a href="/about"><span>ABOUT US</span></a>
+	</div>
+	<a href="https://www.youtube.com"><svg class="youtube__1_">
+		<pattern elementId="youtube__1__A0_Rectangle_5" id="youtube__1__A0_Rectangle_5_pattern" x="0" y="0" width="100%" height="100%">
+			<image x="0" y="0" width="100%" height="100%" href="/youtubeicon" xlink:href="youtube__1__A0_Rectangle_5_pattern.png"></image>
+		</pattern>
+		<rect fill="url(#youtube__1__A0_Rectangle_5_pattern)" id="youtube__1_" rx="0" ry="0" x="0" y="0" width="15" height="15">
+		</rect>
+	</svg></a>
+	<a href="https://www.twitter.com"><svg class="twitter__1_">
+		<pattern elementId="twitter__1__A0_Rectangle_7" id="twitter__1__A0_Rectangle_7_pattern" x="0" y="0" width="100%" height="100%">
+			<image x="0" y="0" width="100%" height="100%" href="/twittericon" xlink:href="twitter__1__A0_Rectangle_7_pattern.png"></image>
+		</pattern>
+		<rect fill="url(#twitter__1__A0_Rectangle_7_pattern)" id="twitter__1_" rx="0" ry="0" x="0" y="0" width="15" height="15">
+		</rect>
+	</svg></a>
+	<a href="https://www.instagram.com"><svg class="instagram__1_">
+		<pattern elementId="instagram__1__A0_Rectangle_9" id="instagram__1__A0_Rectangle_9_pattern" x="0" y="0" width="100%" height="100%">
+			<image x="0" y="0" width="100%" height="100%" href="/instagramicon" xlink:href="instagram__1__A0_Rectangle_9_pattern.png"></image>
+		</pattern>
+		<rect fill="url(#instagram__1__A0_Rectangle_9_pattern)" id="instagram__1_" rx="0" ry="0" x="0" y="0" width="15" height="15">
+		</rect>
+	</svg></a>
+</div>
+<div class="contact-form">
+        <form action="/save" method="post">
+      <h1>Share Idea</h1>
+      <div class="txtb">
+        <label>Title :</label>
+        <input type="text" name="title" value="">
+      </div>
+      <div class="txtb">
+        <label>Discription :</label>
+        <textarea name="discription"></textarea>
+      </div>
+      <input class="submit" type="submit" value="Share">
+    </div>
+  </form>
+</body>
+</html>
